@@ -57,9 +57,9 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
-                        <h2> Data Progress & Data Modeling</h2>
+                        <h2> Medalion Architecture with DataBrick & Azure dataservice</h2>
                         <div> 
-                            <p>  dataset was collected from <a href="https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0">Wide World Importers sample database</a>  
+                            <p>  dataset was crawled from <a href="https://covidlive.com.au"> Covid Live </a>  
                             </p> 
                             <img src="image/dataEngProject.png" alt="Trend" style="width:100%;">
                         </div> 
@@ -69,27 +69,33 @@
                         <h2> Data Collection  </h2>
                         <div> 
                             <p>
-                                I can import or direct query through SQL server setting up on aruze account.
+                                I utilized Azure Data Factory to load tables from websites in different states, combined those data into one CSV file, and saved it into the <strong>raw</strong> folder.
                             </p>
                             <img src="image/data connection.png" alt="Trend" style="width:100%;">
 
                             <img src="image/data import.png" alt="Trend" style="width:100%;">
                         </div>
 
-                        <h2> Building metrics with DAX and query </h2>
+                        <h2> Data Transformation </h2>
                             <p>
-                               DAX formula
+                                <strong> Bronze Layer </strong>
                             </p>
                             <p>
-                               New customers by period
+                               In this stage, I loaded data from raw to bronze through the same flow from Azure Data Factory above.
                             </p>
                             <img src="image/dax-new-customer.png" alt="Trend" style="width:100%;">
                             <p>
-                                Existing customers by period
+                                <strong>Silver Layer</strong>
+                             </p>
+                             <p>
+                                In this stage, I loaded data from raw to bronze through the same flow from Azure Data Factory above.
                              </p>
                              <img src="image/dax-existing-customers.png" alt="Trend" style="width:100%;">
                              <p>
-                                Cohort analysis
+                                <strong> Gold Layer</strong>
+                             </p>
+                             <p>
+                                In this stage, I loaded data from raw to bronze through the same flow from Azure Data Factory above.
                              </p>
                              <img src="image/first order cusotmer dax.png" alt="Trend" style="width:100%;">
                              <p>
