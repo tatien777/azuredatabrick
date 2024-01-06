@@ -72,9 +72,7 @@
                             <p>
                                 I utilized Azure Data Factory to load tables from websites in different states, combined those data into one CSV file, and saved it into the <strong>raw</strong> folder.
                             </p>
-                            <img src="image/data connection.png" alt="Trend" style="width:100%;">
-
-                            <img src="image/data import.png" alt="Trend" style="width:100%;">
+                            <img src="image/adfFlow.png" alt="Trend" style="width:100%;">
                         </div>
 
                         <h2> Data Transformation </h2>
@@ -84,23 +82,28 @@
                             <p>
                                In this stage, I loaded data from raw to bronze through the same flow from Azure Data Factory above.
                             </p>
-                            <img src="image/dax-new-customer.png" alt="Trend" style="width:100%;">
+                            <img src="image/bronzeProcess.png" alt="Trend" style="width:100%;">
                             <p>
                                 <strong>Silver Layer</strong>
                              </p>
                              <p>
-                                In this stage, I loaded data from raw to bronze through the same flow from Azure Data Factory above.
+                                In this stage, I filtered & cleaned data from bronze source 
                              </p>
-                             <img src="image/dax-existing-customers.png" alt="Trend" style="width:100%;">
+                             <img src="image/siverProcess.png" alt="Trend" style="width:100%;">
                              <p>
                                 <strong> Gold Layer</strong>
                              </p>
                              <p>
-                                In this stage, I loaded data from raw to bronze through the same flow from Azure Data Factory above.
+                                In this stage, I had aggragation to create an aggreagated table and calendar table for visualising in powerbi subsequently.
                              </p>
-                             <img src="image/first order cusotmer dax.png" alt="Trend" style="width:100%;">
-    
-                       
+                             <img src="image/goldProcess.png" alt="Trend" style="width:100%;">
+                            <h2> Data Visualisation </h2>
+                            <p>
+                                <strong> DataBrick </strong>
+                            </p>           
+                            <p>
+                               Here's some chart which was built in DataBrick.
+                             </p>
 
  <!--                <h2> Applying row-level security  </h2>-->
                 </div>
